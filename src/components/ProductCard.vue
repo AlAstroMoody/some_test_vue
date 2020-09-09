@@ -48,8 +48,12 @@ export default {
         return this.count
       },
       set(value) {
-        this.countCopy = value
+        if (value) {
+          this.countCopy = value
+        }
+        else this.countCopy = 0
         this.$emit('toOrder', {product: this.product, count: this.countCopy})
+
       }
     }
   }
