@@ -4,7 +4,7 @@
     <section class="cart-modal__body">
       <transition-group name="list" tag="p">
         <div v-for="product in order" :key="product.product.id" class="cart-modal__order">
-          <order-body :product.sync="product" class="cart-modal__order-body" @removeProduct="removeProduct"/>
+          <order-body :product="product" class="cart-modal__order-body" @removeProduct="removeProduct"/>
         </div>
       </transition-group>
     </section>

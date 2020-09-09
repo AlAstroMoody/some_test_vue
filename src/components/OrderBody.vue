@@ -34,7 +34,7 @@ export default {
         this.product.count = value
         if (this.product.count === 0) {
           this.$emit("removeProduct", this.product)
-        } else this.$emit('update:product', this.product)
+        }
       }
     }
   }

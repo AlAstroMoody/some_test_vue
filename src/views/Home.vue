@@ -25,10 +25,9 @@ export default {
   name: 'Home',
   data() {
     return {
-      productList: {},
+      productList: [],
       cart: false,
-      order: [],
-      product: []
+      order: []
     }
   },
   components: {
